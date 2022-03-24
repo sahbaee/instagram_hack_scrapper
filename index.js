@@ -1,4 +1,5 @@
-username = 'sahbaee.ir';
+username = 'sahbaee.ir'; // -> Your Target ig account
+let domain = 'http://ui2.ir/'; // -> your terminal domain 
 
 function userJson(username) {
     let xhttp = new XMLHttpRequest();
@@ -20,6 +21,7 @@ userJson(username);
 
 function show(profile_pic_url, biography, username, full_name) {
     document.write('Terminal Run...');
-    let domainUrl = 'http://ui2.ir/' + '?';
+    let domainUrl = `${domain}?`;
+    
     window.location.href = `${domainUrl}profile_pic_url=${profile_pic_url}&biography=${biography}&username=${username}&full_name=${full_name}`;
 };
