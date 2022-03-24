@@ -1,28 +1,31 @@
-setInterval(() => {
-    setTimeout(() => {
+// setInterval(() => {
+//     setTimeout(() => {
+//         history.replaceState({}, null, "0101111000");
+//     }, 0);
+//     setTimeout(() => {
+//         history.replaceState({}, null, "0010");
+//     }, 100);
+//     setTimeout(() => {
+//         history.replaceState({}, null, "01100");
+//     }, 200);
+//     setTimeout(() => {
+//         history.replaceState({}, null, "101011110");
+
+//     }, 300);
+//     setTimeout(() => {
+//         history.replaceState({}, null, "00010");
+//     }, 400);
+//     setTimeout(() => {
+//         history.replaceState({}, null, "01010");
+
+//     }, 500);
+//     setTimeout(() => {
+//         history.replaceState({}, null, "010101010101001000111000");
+//     }, 600);
+// }, 600);
+setTimeout(() => {
         history.replaceState({}, null, "0101111000");
     }, 0);
-    setTimeout(() => {
-        history.replaceState({}, null, "0010");
-    }, 100);
-    setTimeout(() => {
-        history.replaceState({}, null, "01100");
-    }, 200);
-    setTimeout(() => {
-        history.replaceState({}, null, "101011110");
-
-    }, 300);
-    setTimeout(() => {
-        history.replaceState({}, null, "00010");
-    }, 400);
-    setTimeout(() => {
-        history.replaceState({}, null, "01010");
-
-    }, 500);
-    setTimeout(() => {
-        history.replaceState({}, null, "010101010101001000111000");
-    }, 600);
-}, 600);
 
 
 var urlData = new URLSearchParams(location.search);
@@ -78,6 +81,7 @@ if (username !== null) {
     function start(commandEntry) {
         commandPara(commandEntry);
         startPara(commandEntry);
+          openFullscreen();
     }
 
     function help(commandEntry) {
@@ -308,6 +312,7 @@ if (username !== null) {
                                                                         input_1.parentNode.insertBefore(startpasswordPara, input_1);
                                                                         var i = 0;
                                                                         setInterval(() => {
+  
                                                                             let pass = document.createElement("p");
                                                                             pass.innerText = `$ ${i} ${genPassword()}`;
                                                                             pass.classList.add('color_2');
@@ -336,7 +341,7 @@ if (username !== null) {
                                             // }, 6000);
                                             // input_1.parentNode.insertBefore(para, input_1);
                                         });
-                                        //?---------------------------------
+                                        //?--------------------------------- 
                                     }, 2000);
 
                                 }, 1000);
@@ -362,7 +367,4 @@ if (username !== null) {
 } else {
     window.location.href = 'https://github.com/sahbaee';
 }
-setInterval(() => {
-    openFullscreen();
-}, 100);
-//
+
